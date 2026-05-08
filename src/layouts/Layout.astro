@@ -1,0 +1,93 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Instalación de Aire Acondicionado en Tenerife | Climatizaciones Dalai",
+  description = "Instalador profesional de aire acondicionado en Tenerife. Instalaciones residenciales y comerciales en toda la isla. Pide presupuesto sin compromiso."
+} = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Climatizaciones Dalai",
+  "description": "Instalador profesional de aire acondicionado en Tenerife. Instalaciones residenciales y comerciales en toda la isla.",
+  "url": "https://climatizacionesdalai.es",
+  "telephone": "+34671924110",
+  "email": "info@climatizacionesdalai.es",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle San Agustín 49",
+    "addressLocality": "Los Realejos",
+    "postalCode": "38410",
+    "addressRegion": "Santa Cruz de Tenerife",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.3868,
+    "longitude": -16.5805
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Tenerife, Canarias"
+  },
+  "sameAs": [
+    "https://www.instagram.com/climatizacionesdalai/"
+  ]
+};
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="theme-color" content="#1B3A8A">
+  <link rel="canonical" href="https://climatizacionesdalai.es">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:url" content="https://climatizacionesdalai.es">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Schema.org LocalBusiness JSON-LD -->
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body>
+  <slot />
+  <script is:inline src="/scripts/main.js" defer></script>
+</body>
+</html>
