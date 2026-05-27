@@ -162,27 +162,6 @@ Markup estructurado completo para negocio local:
 
 ---
 
-## Imágenes
-
-Las imágenes de la galería y los servicios usan URLs de Unsplash como placeholder. Cada `<img>` lleva un comentario con la ruta local futura:
-
-```html
-<!-- Sustituir por: ./public/img/gallery-1.jpg -->
-<img src="https://images.unsplash.com/..." alt="..." loading="lazy" />
-```
-
-Rutas locales a sustituir cuando el cliente entregue los assets:
-
-| Placeholder          | Ruta local                                   |
-| -------------------- | -------------------------------------------- |
-| Hero                 | `public/img/hero.jpg`                        |
-| Servicio residencial | `public/img/service-residential.jpg`         |
-| Servicio comercial   | `public/img/service-commercial.jpg`          |
-| Galería 1–6          | `public/img/gallery-1.jpg` … `gallery-6.jpg` |
-| OG Image             | `public/img/og-image.jpg` (1200×630)         |
-
----
-
 ## Comandos
 
 ```bash
