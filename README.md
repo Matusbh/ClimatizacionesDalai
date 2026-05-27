@@ -201,14 +201,6 @@ pnpm preview
 
 ---
 
-## Pendiente
-
-- [ ] Sustituir imágenes de Unsplash por fotos reales del cliente
-- [ ] Confirmar email real y horario definitivo con el cliente
-- [ ] Registrar Google Business Profile con categoría "Instalación de aire acondicionado"
-- [ ] Añadir páginas legales (Aviso legal, Política de privacidad, Cookies)
-- [ ] Configurar dominio y despliegue en producción
-
 ---
 
 _Desarrollado por [Matus Behun](mailto:matusbehun03@gmail.com)_
