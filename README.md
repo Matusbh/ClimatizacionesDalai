@@ -6,13 +6,9 @@ Sitio web corporativo para **Climatizaciones Dalai**, instalador profesional de 
 
 ## 🌐 Ver en vivo
 
-[https://climatizacionesdalai.es](https://climatizacionesdalai.es)
+[https://climatizaciones-dalai.vercel.app](https://climatizaciones-dalai.vercel.app) — Vercel (actual)
 
----
-
-## 📸 Vista previa
-
-![Vista previa de la web](./ruta/a/tu/captura.png)
+[https://climatizacionesdalai.es](https://climatizacionesdalai.es) — Dominio definitivo (pendiente)
 
 ---
 
